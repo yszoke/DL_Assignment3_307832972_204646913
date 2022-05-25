@@ -213,7 +213,7 @@ def read_midi(dataframe):
         name_song = row[1].replace(" ", "_")
         name_file = author + "_-_" + name_song + ".mid"
         try:
-            pm = pretty_midi.PrettyMIDI("File/midi_files/" + name_file)
+            pm = pretty_midi.PrettyMIDI("midi_files/" + name_file)
             # dic_midi_ans[index] = pm
             # TODO update list of value
             midi_data_vector = extract_data_midi(pm)
